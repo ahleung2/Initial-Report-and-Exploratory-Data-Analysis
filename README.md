@@ -1,6 +1,6 @@
 ### Predicting Breast Cancer Recurrence using Machine Learning
 
-**Author**
+**Aaron Leung**
 
 #### Executive summary
 
@@ -50,11 +50,14 @@ _Model Evaluation and Hyperparameter Tuning_
    
 
 #### Results
-What did your research find?
+- Among the four models trained, Logistic Regression performed the best overall on the test set, displaying the high accuracy, recall and f1 score on the test set.
+- In contrast, the other models exhibited noticeable drops across perfromance metrics from the training set to test set, even with GridSearchCV
+- We were able to extract feature importance from the Logistic Regression and Decision Tree models, respectively. Interestingly, the top features differed significantly between the two models. For Logistic Regression, the top important features include, breast-quad?, menopauselt40, and irradiation. In contrast, for Decision Tree, the top features are the degree of malignancy, number of lymph nodes involved, age and tumor-size.
 
 #### Next steps
-What suggestions do you have for next steps?
-
+- Improve performance of models by revisitng hyperparameter tuning and data preprocessing steps to enhance cross-validation score
+- Identify additional visualizations to effectively present findings
+- For future considerations, it would be benenficial to incorporate genetic information into dataset, as genetics can play a significant role. This includes factors such as genetic mutations and family history
 #### Outline of project
 
 - [Link to notebook 1]()
